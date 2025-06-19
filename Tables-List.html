@@ -2,28 +2,30 @@
 <html lang="en">
     <table border="1">
     <caption>FavoriteMovies</caption>
-    <colgroup><!--helpful for aplying styles so not much of use here-->
+    <colgroup>
     <col>
     <col>
     <col>
     </colgroup>
-    <thead>
+    <thead><!--groups the header rows no matter where it is placed-->
         <tr>
-            <th>Name</th>
-            <th>Release-Date</th>
+            <th>Name</th><!--table headder used to reprent a colum or row inside thead-->
+            <th>Release-Date</th><!--will alwways represent header rows-->
             <th>Director</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody><!--defines the rows in sequential manner after header rows -->
+        
+        <tr>><!--defines table rows -->
+            <td>Interstellar</td><!--defines cells inside rows-->
+            <td><time>2014-11-05</time></td>
+            <td>Christopher Nolan</td>
+        </tr>
         <tr>
             <td>The Batman</td>
             <td><time>2022-03-04</time></td>
             <td> Matt Reeves</td>
-        </tr>
-        <tr>
-            <td>Interstellar</td>
-            <td><time>2014-11-05</time></td>
-            <td>Christopher Nolan</td>
+            
         </tr>
         <tr>
             <td>Avengers-InfinityWar</td>
@@ -31,16 +33,16 @@
             <td>Russobrothers</td>
         </tr>
     </tbody>
-
-    <tfoot>
+    <tfoot><!--same as header row always appears at bottom-->
         <tr>
             <td>TotalMovies</td>
-            <td colspan="2">3</td>
+            <td colspan="2">3<td><!--merges two cells colspan is an attribute provides extra info-->
         </tr>
     </tfoot>
 </table>
 
-    <hr>
+<hr>
+
 <h2>Hobbies</h2> <!--UNorderedlist of Hobbies-->
 <ul>
     <li>Gaming</li>
@@ -53,10 +55,21 @@
 </ol>
 <h2> List of games with their genre</h2>
 <dl> <!--descriptive lists of games-->
-    <dt>Witcher 3</dt>
-    <dd>RPG game </dd>
+    <dt>Witcher 3</dt><!--defines hte term to be described-->
+    <dd><!--describes the term-->
+        <ul><!--you can't use the ul and ol under dl and dt but can be used inside dd for accessibility purposes-->
+            <li>action</li>
+            <li>rpg</li>
+            <li>fantasy</li>
+        </ul>
+    </dd>
     <dt>genshin impact</dt>
-    <dd>mmorpg</dd>
+    <dd>
+        <li>gacha</li>
+        <li>action</li>
+        <li>fanatsy</li>
+        <li>adventure</li>
+    </dd>
 
 </dl>
 </html>
