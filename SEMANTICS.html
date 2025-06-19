@@ -4,19 +4,25 @@
         <title>SEMANTICS AND TAGS</title>
     </head>
     <body>
-        <header>
+        <header> <!--defines introduction of the page or nav bars-->
             <h1>About semantics</h1>
+            <nav><!--defines the links mostly in header section like for going around the webpage-->
+                    <a href="about.html">About</a>
+                    <a href="home.html">Home</a>
+                    <a href="services.html">services</a>
+                    <a href="contactus.html">contactus</a>
+                </nav>
             <p>Why do we need semantics</p>
         </header>
-        <pre>
+        <pre><!--displays the info as written while writing the code-->
             -It describes meaning to both browser and developer
             -Provides clarity and is easier to read and understand
             -defines differnt parts of web pages
         </pre>
-        <main>
+        <main><!--defines the main content of the webpage-->
             <h1> TAGS FOR SEMANTICS</h1>
             <SECtion>
-                <h3>SECTION</h3>
+                <h3>SECTION</h3><!--defines a content -->
                 <pre>
                     -defines a section in a document 
                     -grouping of content typically with a heading 
@@ -25,7 +31,7 @@
                         -introduction
                         -news items etc.
                 </pre>
-                <aside>
+                <aside><!--represents side content like ads etc-->
                     <h2>info about aside</h2>
                     <p>content placed in like a sidebar used to add some extra info</p>
                 </aside>
@@ -33,7 +39,7 @@
             </SECtion>
     <!--now applying article tag -->
             <h1>ARTICLE SEMANTIC</h1>
-            <article>
+            <article><!--independ information is displayed here-->
                 <h2>Headline 1</h2>
                 <p>
                     some information about the Headline 1
@@ -45,14 +51,14 @@
                     some information about Headline 2
                 </p>
             </article>
-            <figure>
+            <figure><!--used to display a media with caption-->
                 <img src="stp.jpg" alt="some image about sunset">
                 <figcaption>fig-some warm sunset </figcaption><!--basically caption for the image shown-->
 
             </figure>
             <section>
                 <h2>Using time semantic</h2>
-                <p>aby was born on the date <time datetime="2004-09-23"> at 3 pm</time>.</p>
+                <p>aby was born on the date <time datetime="2004-09-23"> 2004-09-23 at 3 pm</time>.</p>
 
             </section>
             <details><!--details and summary are used together it expands on clicking it -->
@@ -65,7 +71,7 @@
                 <p>like highlighting the <mark>text</mark></p>
             </article>
 
-            <footer>
+            <footer><!--used to represent bottom part of the page can contain some nav links -->
                 <h2>Links for each sematics</h2>
                 <nav>
                     <a href="https://www.w3schools.com/tags/tag_article.asp">Article</a>|
@@ -81,6 +87,7 @@
                     <a href="https://www.w3schools.com/tags/tag_section.asp">section</a>|
                     <a href="https://www.w3schools.com/tags/tag_summary.asp">summary</a>|
                     <a href="https://www.w3schools.com/tags/tag_time.asp">time</a>|
+                </nav>
                 </nav>
             </footer>
 
