@@ -2,10 +2,17 @@
 <html>
     <body>
         <form action="action_page.php"><!--sends the data to a server therefore imp-->
-            <label for ="fname">First name:</label><br><!--defines a label for several form elements that appears to the users-->
+            <fieldset><!--groups related data in a form-->
+                <legend>Basic information</legend><!--adds a caption to the fieldset you created-->
+                <label for ="fname">First name:</label><br><!--defines a label for several form elements that appears to the users-->
             <input type="text" id="fname" name="fname"><br><!--type defines the input to be taken-->
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname"><br><!--name is the attribute submmited to the server with the value submitted-->
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="Phone"><br><!--on mobile devices it shows the numeric keypad it doesn't validate the format by default like you can also enter text here -->
+            <!--to restrict the input we have to use the pattern attribute-->
+            <label for="email">Email:</label><br><!--will tell you to include the @ followed with what it is associated with -->
+            <input type="email" id="email" name="Email">
             <h3>choose your gender</h3>
             <input type="radio" id="male" name="your gender" value="Male"><!--like for example your gender=Male will be submitted here -->
             <label for="male">MALE</label>
@@ -13,11 +20,7 @@
             <label for="female">Female</label>
             <input type="radio" id="other" name="your gender" value="Other">
             <label for="other">Other</label>
-             <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="Phone"><br><!--on mobile devices it shows the numeric keypad it doesn't validate the format by default like you can also enter text here -->
-            <!--to restrict the input we have to use the pattern attribute-->
-            <label for="email">Email:</label><br><!--will tell you to include the @ followed with what it is associated with -->
-            <input type="email" id="email" name="Email">
+            </fieldset>
             <h3>vehicles you possess</h3>
             <input type="checkbox" id="ivehicle1" name="vehicle1" value="Bike"><!--check box lets you choose multiple options and same name not req -->
             <label for="vehicle1">Bike</label>
