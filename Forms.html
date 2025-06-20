@@ -13,6 +13,11 @@
             <label for="female">Female</label>
             <input type="radio" id="other" name="your gender" value="Other">
             <label for="other">Other</label>
+             <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="Phone"><br><!--on mobile devices it shows the numeric keypad it doesn't validate the format by default like you can also enter text here -->
+            <!--to restrict the input we have to use the pattern attribute-->
+            <label for="email">Email:</label><br><!--will tell you to include the @ followed with what it is associated with -->
+            <input type="email" id="email" name="Email">
             <h3>vehicles you possess</h3>
             <input type="checkbox" id="ivehicle1" name="vehicle1" value="Bike"><!--check box lets you choose multiple options and same name not req -->
             <label for="vehicle1">Bike</label>
@@ -29,6 +34,8 @@
                 <option value="AUDI">AUDI</option>
                 <option value="Other">Others</option>
             </select>
+            <h2>Address</h2>
+            <textarea name="message" rows="3" cols="30"></textarea><!--defines a multi line input field-used for long text ->
 
             <hr>
             <input type="submit" value="submit">
