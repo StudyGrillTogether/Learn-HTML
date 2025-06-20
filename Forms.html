@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="action_page.php"><!--sends the data to a server therefore imp-->
+            <label for ="fname">First name:</label><br><!--defines a label for several form elements that appears to the users-->
+            <input type="text" id="fname" name="fname"><br><!--type defines the input to be taken-->
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><!--name is the attribute submmited to the server with the value submitted-->
+            <h3>choose your gender</h3>
+            <input type="radio" id="male" name="your gender" value="Male"><!--like for example your gender=Male will be submitted here -->
+            <label for="male">MALE</label>
+            <input type="radio" id="female" name="your gender" value="Female"><!--radio lets you choose only one option  and same name req to group them -->
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="your gender" value="Other">
+            <label for="other">Other</label>
+            <h3>vehicles you possess</h3>
+            <input type="checkbox" id="ivehicle1" name="vehicle1" value="Bike"><!--check box lets you choose multiple options and same name not req -->
+            <label for="vehicle1">Bike</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="car"><!--id lets you uinquely identify and connect label element and input element -->
+            <label for="income2">Car</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Truck"><!--you cannot use name and value attribute to connect to label tag-->
+            <label for="vehicle3">Truck</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Others">
+            <label for="vehicle3">Other</label><br>
+            <label for="brand">choose a brand</label><!--willbe using select element for this -->
+            <select id="brand" name="brand"><!--select element defines a drop down ist and size here is used to specify the number of values visible for multiple use multiple after size -->
+                <option value="BMW">BMW</option><!--option element defines the option that can be selected via a dropdown-->
+                <option value="MERCEDEZ">MERCEDEZ</option><!--by default first itme is selected-->
+                <option value="AUDI">AUDI</option>
+                <option value="Other">Others</option>
+            </select>
+
+            <hr>
+            <input type="submit" value="submit">
+            
+
+        </form>
+    </body>
+</html>
