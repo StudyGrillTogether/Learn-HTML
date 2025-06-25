@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SEMANTICS AND TAGS</title>
+    </head>
+    <body><!--so we cant place comment outside style tag the reason is bcz after style everythig is treated as css so it doesnt recognize html tag
+        we used internal css here by using the basics of it like changing color and alligning text -->
+        <Style>
+            p{
+                color: aquamarine;
+            }
+            pre{
+                color: aquamarine;
+            }
+            article{
+                color: beige;
+                text-align: left;
+            }
+            aside{
+                color: cadetblue;
+                text-align: right;
+            }
+            details{
+                color: blue;
+                
+            }
+        </Style>
+        <style>
+            h{
+                color: burlywood;
+                text-align: center;
+            }
+        </style>
+        <header> <!--defines introduction of the page or nav bars-->
+            <h1>About semantics</h1>
+            <nav><!--defines the links mostly in header section like for going around the webpage-->
+                    <a href="about.html">About</a>
+                    <a href="home.html">Home</a>
+                    <a href="services.html">services</a>
+                    <a href="contactus.html">contactus</a>
+                </nav>
+            <p>Why do we need semantics</p>
+        </header>
+        <pre><!--displays the info as written while writing the code-->
+            -It describes meaning to both browser and developer
+            -Provides clarity and is easier to read and understand
+            -defines differnt parts of web pages
+        </pre>
+        <main><!--defines the main content of the webpage-->
+            <h1> TAGS FOR SEMANTICS</h1>
+            <SECtion>
+                <h3>SECTION</h3><!--defines a content -->
+                <pre>
+                    -defines a section in a document 
+                    -grouping of content typically with a heading 
+                    -used for
+                        -chapters
+                        -introduction
+                        -news items etc.
+                </pre>
+                <aside><!--represents side content like ads etc-->
+                    <h2>info about aside</h2>
+                    <p>content placed in like a sidebar used to add some extra info</p>
+                </aside>
+
+            </SECtion>
+    <!--now applying article tag -->
+            <h1>ARTICLE SEMANTIC</h1>
+            <article><!--independ information is displayed here-->
+                <h2>Headline 1</h2>
+                <p>
+                    some information about the Headline 1
+                </p>
+            </article>
+            <article>
+                <h2>Headline 2</h2>
+                <p>
+                    some information about Headline 2
+                </p>
+            </article>
+            <figure><!--used to display a media with caption-->
+                <img src="stp.jpg" alt="some image about sunset">
+                <figcaption>fig-some warm sunset </figcaption><!--basically caption for the image shown-->
+
+            </figure>
+            <section>
+                <h2>Using time semantic</h2>
+                <p>aby was born on the date <time datetime="2004-09-23"> 2004-09-23 at 3 pm</time>.</p>
+
+            </section>
+            <details><!--details and summary are used together it expands on clicking it -->
+                <h2>Summary and details semantics</h2>
+                <summary>Creating a webpage </summary>
+                <p>we use different semantics and tags learnt before to create the webpage and going over each semantics types </p>
+            </details>
+            <article>
+                <h2>highlighting text via mark</h2>
+                <p>like highlighting the <mark>text</mark></p>
+            </article>
+
+            <footer><!--used to represent bottom part of the page can contain some nav links -->
+                <h2>Links for each sematics</h2>
+                <nav>
+                    <a href="https://www.w3schools.com/tags/tag_article.asp">Article</a>|
+                    <a href="https://www.w3schools.com/tags/tag_aside.asp">Aside</a>|
+                    <a href="https://www.w3schools.com/tags/tag_details.asp">details</a>|
+                    <a href="https://www.w3schools.com/tags/tag_figcaption.asp">figcaption</a>|
+                    <a href="https://www.w3schools.com/tags/tag_figure.asp">figure</a>|
+                    <a href="https://www.w3schools.com/tags/tag_footer.asp">footer</a>|
+                    <a href="https://www.w3schools.com/tags/tag_header.asp">header</a>|
+                    <a href="https://www.w3schools.com/tags/tag_main.asp">main</a>|
+                    <a href="https://www.w3schools.com/tags/tag_mark.asp">mark</a>|
+                    <a href="https://www.w3schools.com/tags/tag_nav.asp">nav</a>|
+                    <a href="https://www.w3schools.com/tags/tag_section.asp">section</a>|
+                    <a href="https://www.w3schools.com/tags/tag_summary.asp">summary</a>|
+                    <a href="https://www.w3schools.com/tags/tag_time.asp">time</a>|
+                </nav>
+                </nav>
+            </footer>
+
+        </main>
+    </body>
+</html>
