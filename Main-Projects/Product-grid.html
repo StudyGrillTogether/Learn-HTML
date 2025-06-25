@@ -9,7 +9,7 @@
             text-align: center;
             margin: 20px;
         }
-        .productgrid{
+        .productgrid{ /*this is a container holding all product cards it s a flex container with wrap to prevent overflow and makes the content in center*/
             display: flex;
             flex-wrap: wrap;
             background-color: aliceblue;
@@ -17,7 +17,8 @@
             border-radius: 18px;
 
         }
-        .productcard {
+        .productcard { /* this style each individual product card it is also a flex container and stacks items vertically since flex-direction:column used here
+            and alligns items vertically */
             background-color: rgb(228, 91, 91);
             width: 200px;
             height: 150px;
@@ -34,20 +35,20 @@
             box-sizing: border-box;/*prevents padding from overflowing*/
 
         }
-        .productgrid > div:hover{
+        .productgrid > div:hover{ /*when you hover over a product card it adds a subtle shadow to give a 3d lifted effect*/
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
-        .productcard img{
+        .productcard img{/*styles the image inside the prodcut card*/
             width: 50%;
             height: auto;
             border-radius: 10px;
         }
-        .productname{
+        .productname{ /*styles the names of produc*/
             font-weight: bold;
             font-size: 15px;
             margin: 2px;
         }
-        .productprice{
+        .productprice{/* styles the price of product */
             color: blueviolet;
             font-weight: bold;
         }
