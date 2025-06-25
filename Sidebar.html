@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIDEBAR</title>
+    </head>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;/*makes body horizontal flex container putting the contents side by side*/
+        }
+        .sidebar{
+            position: fixed;/*makes side bar float by fixing its position even when the page is sccrolled*/
+            width: 200px;
+            height: 100vh;/*full viewport height */
+            top: 0px;
+            left: 0px;
+            background-color:black;
+            color: azure;/*represents color of text*/
+            padding: 10px;
+        }
+        a{
+            display: block;/*makes a act like a block element,it takes full width*/
+            color: white;
+            text-decoration: none;/*removes default underline from the links*/
+            margin: 10px 0;
+            padding: 5px;
+        }
+        a:hover{
+            background-color: brown;
+        }
+        .maincont{
+            margin-left: 200px;/*same as side bar width thus not overlapping*/
+            padding: 20px;
+            height: 100vh;
+            background-color:white;
+        }
+    </style>
+    <div class="sidebar">
+        <h2 style="color: blanchedalmond;font-weight: bold;">Sidebar</h2>
+        <a href="#">Home</a><!--# is a place holder link i.e it does nothing-->
+        <a href="#">Projects</a>
+        <a href="#">about</a>
+        <a href="#">Contact</a>
+    </div>
+    <div  class="maincont">
+        <p style="font-family: 'Times New Roman', Times, serif;">This is a side content or main content in the webpage </p>
+    </div>
+</html>
