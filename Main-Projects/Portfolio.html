@@ -2,21 +2,39 @@
 <html>
     <head>
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="css files/Link.css"><!--linking a external css file to the html file -->
-    </head>
-    <body style="background-color: aqua;">
-        <fieldset><header><strong>Kshitij Wankar</strong></header></fieldset>
-        <hr>
+        <link rel="stylesheet" href="css files/Link.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <fieldset>
+    </head>
+    <body>
+        <section id="header">
+            <header>
+                <strong>Kshitij Wankar</strong>
+                <p style="text-align: center;font-style: italic;font-size: 18px;">Aspiring Frontend Developer</p>
+            </header>
+        </section>
+        <section id="navlinks">
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#technicalskills">Technicalskills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="grid-container">
+            <section id="profile">
             <img src="images/profile.png" width="20" height="20">
-            <strong>Profile</strong>
+            <strong>About</strong>
         <p>
             I'm an undergraduate IT student currently learning core computer science fundamentals. I enjoy exploring web technologies and programming logic,<br>
             and I'm passionate about building a strong foundation for a career in tech.
         </p>
-        </fieldset>
-        <fieldset>
+        </section>
+        <section id="education">
             <img src="images/education.jpg" width="20" height="20">
             <strong>Education</strong>
         <ul>
@@ -25,20 +43,35 @@
             </li>
             <li>Relevant Subjects-DSA, DBMS, OS, COA </li>
         </ul>
-        </fieldset>
-        <fieldset>
+        </section>
+        <section id="projects" class="span-rows">
             <img src="images/projects.jpg" width="20" height="20">
             <strong>Projects</strong>
         <ul>
-            <li>Form Handling<br>
-                -Created a user input form for feedback/contact in HTML<br>
+            <li>
+                <h3>Form handling</h3>
+                <P>created a user input form using HTML for feedback/contact.</P>
+                <a href="https://github.com/StudyGrillTogether/Learn-HTML/blob/main/Main-Projects/Forms.html">Github Repo</a>
             </li>
-            <li>Building a multimedia Webpage<br>
-                -Creating a webpage having different sorts of media<br>
+            <li>
+                <h3>Multimedia Webpage</h3>
+                <p>Built a Webpage with embedded media:audio,vido and images.</p>
+                <a href="https://github.com/StudyGrillTogether/Learn-HTML/blob/main/Main-Projects/Media.html">Github repo</a>
             </li>
+            <li>
+                <h3>Responsive Image Gallery</h3>
+                <p>A clean,responsive photo gallery built using css grid layout.</p>
+                <a href="https://github.com/StudyGrillTogether/Learn-HTML/blob/main/Main-Projects/Photo-Gallery.html">Github Repo</a>
+            </li>
+            <li>
+                <h3>Profile Card</h3>
+                <p>Built a simple profile card implementing the flexbox property of css</p>
+                <a href="https://github.com/StudyGrillTogether/Learn-HTML/blob/main/Main-Projects/Profile-Card.html">Github Repo</a>
+            </li>
+            
         </ul>
-        </fieldset>
-        <fieldset>
+        </section>
+        <section id="technicalskills">
         <img src="images/technicalskills.jpg" width="20" height="20">    
         <strong>Technical Skills</strong>
         <ul>
@@ -46,25 +79,44 @@
             <li>Tools:Git,Visua Studio Code</li>
             <li>Learning:CSS,JAVASCRIPT</li>
         </ul>
-        </fieldset>
-        <fieldset>
+        </section>
+        <section id="achievements">
             <img src="images/achievements.jpg" width="20" hieght="20">
             <strong>Achievements</strong>
         <ul>
             <li>Made some projects for learning</li>
         </ul>
-        </fieldset>
-        <fieldset>
-            <footer>
-            <details>
-            <summary><strong>Contact me</strong></summary>
-            <summary>-github:https://github.com/Kshitij1ghk</summary>
-            <summary>-Gmail:kshitijwk@gmail.com</summary>
-        </details>
+        </section>
+        <section id="contacts" class="span-columns">
+            <h3>Contact</h3>
+                <form>
+                    <div class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="contact-form">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="contact-form">
+                        <label for="message">Message:</label>
+                        <textarea name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="contact-form">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+        </section>
+        </div>
+        <footer>
+            <a href="#header">Back to top</a>
         </footer>
-        </fieldset>
         <center>
-           <p>@ 2025 Kshitij Wankar </p>
+            <pre>
+            @ 2025 Kshitij Wankar
+
+            <a href="https://github.com/Kshitij1ghk">Github</a>
+            </pre>
         </center>
     </body>
 </html>
